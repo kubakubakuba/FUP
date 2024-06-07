@@ -53,6 +53,7 @@ Throws will be represented as the symbols `'r`, `'p` and `'s`.
            (future (strats-future strategies)))
         ; Implement me!
       )
+  )
 )
 ```
 You can use the `remove-duplicates` function to remove duplicate throws and `sort` with `symbol<?` to order throws.
