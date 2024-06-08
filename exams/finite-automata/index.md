@@ -213,7 +213,6 @@ The function is used as follows:
 > (accepts nfa "abab")
 #f
 ```
-\noindent
 
 Next, given the automaton, its alphabet, and a length, generate the list of all words of the given
 length that are accepted by the automaton. Implement the function
