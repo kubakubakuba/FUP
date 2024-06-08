@@ -10,7 +10,7 @@ outline: deep
 
 The convex hull of a set of points is the smallest convex shape that contains the
 whole set.  Fig. 1A shows a set of six points - five of
-which constitute the \emph{generating points} of
+which constitute the **generating points** of
 their convex hull. In this task you have to find smallest set of generating
 points of the convex hull of a given set of points.
 
@@ -48,7 +48,7 @@ end
 1. In the initial phase of the algorithm you have to find the point with smallest y-coordinate and
    largest x-coordinate, further called $p_0$.
 
-2. Now, sort all points based on the \emph{polar angle} they form with $p_0$.  The polar angle is
+2. Now, sort all points based on the **polar angle** they form with $p_0$.  The polar angle is
    the angle that a vector forms with the x-axis (as shown in Fig. 1B).  Note
    that the polar angle of $p_0$ with itself is not well defined, so you can just add $p_0$ as the
    first element in your sorted list. Further, you can assume that there are no points with the same
@@ -56,9 +56,9 @@ end
 
 3. Initialize an empty stack $\mathcal G$.  While your stack has less than two elements, just push
    points from your sorted list of points.  For each remaining point $p_i$ in the sorted list, check
-   if the two top points from the stack ($p_{i-2}$, $p_{i-1}$) and $p_i$ form a \emph{left turn}.
+   if the two top points from the stack ($p_{i-2}$, $p_{i-1}$) and $p_i$ form a **left turn**.
    If it is a left turn, add $p_i$ to $\mathcal G$ and continue to the next point.  If it is a right
-   turn, $p_{i-1}$ is \emph{not} part of the hull; remove $p_{i-1}$ from $\mathcal G$, and repeat
+   turn, $p_{i-1}$ is **not** part of the hull; remove $p_{i-1}$ from $\mathcal G$, and repeat
    the check for a left turn with the current point $p_i$ and the updated $\mathcal G$.
 
 Exemplary iterations of the algorithm are shown in Fig. 2.
