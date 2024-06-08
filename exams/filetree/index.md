@@ -63,7 +63,7 @@ You are given a list of files (directories separated by `/`) like this:
       "scripts/ex1/eval.ss"
       "scripts/emptydir"
       "scripts/ex2/test.ss"
-      "tests/test_tree.hs"))
+      "tests/test_tree.hs")
 ```
 Parse the list of files into a tree and check if a new file or directory is
 already in the tree with the function
